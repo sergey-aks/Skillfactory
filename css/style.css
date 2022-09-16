@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #000;
+    font-size: 18px;
+    background-color: rgb(226, 226, 226);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Tinos', serif;
+}
+
+header {
+    background: rgb(68, 71, 73);
+    padding: 10px 0 20px;
+}
+
+main {
+    padding: 20px 0;
+
+
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    color: rgb(209, 209, 209);
+}
+
+footer a {
+    color: #fff;
+}
+
+footer {
+    background: rgb(68, 71, 73);
+    padding: 20px 20px 30px;
+}
+
+.footer-links {
+    display: flex;
+    padding: 0;
+}
+
+.footer-links li {
+    list-style-type: none;
+    padding-right: 25px;
+}
+
+.menu {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: rgb(66, 66, 66);
+    background: rgb(184, 184, 184);
+    padding: 3px 10px 7px;
+    border-radius: 7px;
+    margin: 0 5px;
+    text-decoration: none;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.menu a:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(238, 238, 238);
+    box-shadow: 3px 3px 3px #000;
+
+}
+
+.maintitle {
+    text-align: center;
+    border-bottom: 1px solid rgb(117, 117, 117);
+    padding: 20px 0;
+    margin: 0 0 30px;
+}
+
+.maintitle,
+.subtitle {
+    color: rgb(94, 94, 94);
+}
+
+.subtitle {
+    margin: 30px 0 10px;
+    border-left: 5px solid #248340;
+    padding-left: 10px;
+}
+
+footer .subtitle {
+    color: rgb(209, 209, 209);
+    margin-top: 0;
+}
+
+.photo-wrapper {
+    background: rgb(139 139 139);
+    padding: 20px 0;
+}
+
+.photo {
+    width: auto;
+    height: 300px;
+    border: 1px solid gray;
+    display: block;
+    margin: 0 auto;
+    
+}
+/* Icons */
+.icon:before {
+    content: " ";
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    opacity: .6;
+    margin-bottom: -4px;
+    margin-right: 10px;
+}
+.about:before {
+    background-image: url("../img/icons/home_black_24dp.svg");
+}
+.education:before {
+    background-image: url("../img/icons/cast_for_education_black_24dp.svg");
+}
+.skills:before {
+    background-image: url("../img/icons/handyman_black_24dp.svg");
+}
+.hobby:before {
+    background-image: url("../img/icons/surfing_black_24dp.svg");
+}
+.mystory:before {
+    background-image: url("../img/icons/settings_black_24dp.svg");
+}
+
+@media (min-width:1200px) {
+    .main-content {
+        padding: 0 0 30px;
+    }
+    .photo-maintitle-wrapper,
+    .photo-maintitle{
+        background: rgb(139 139 139);
+    }
+    .photo-maintitle {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: 20px;
+        
+    }
+
+    .photo-wrapper {
+        padding: 0;
+    }
+
+    .maintitle {
+        border-bottom: 0;
+        align-self: center;
+        margin: 0;
+        padding: 0 0 0 20px;
+        text-align: left;
+        color: #fff;
+    }
+
+    .content-about {
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-content {
+        padding: 0 15px 30px;
+    }
+
+}
